@@ -1,5 +1,5 @@
-# Drugs Delivery
- Primeiro repositório do site Drugs Delivery
+# Droga Rápida
+ Primeiro repositório do site Droga Rápida
 
 Repositório criado dia 07/05/24
 
