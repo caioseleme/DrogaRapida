@@ -33,110 +33,135 @@
     </div>
 </header>
 
+<!-- Seção Principal -->
+<section class="hero">
+    <h1>Bem-vindo à Entrega de Remédios</h1>
+    <p>Entregamos seus medicamentos com rapidez e segurança.</p>
+</section>
 
-    <!-- Seção Principal -->
-    <section class="hero">
-        <h1>Bem-vindo à Entrega de Remédios</h1>
-        <p>Entregamos seus medicamentos com rapidez e segurança.</p>
-    </section>
-
-    <!-- Seção de Categorias -->
-    <section class="categories">
-        <h2>Categorias de Produtos</h2>
-        <div class="category-list">
-            <div class="category">
-                <a href="produtos.html?categoria=analgesicos">
-                    <img src="images/analgesicos.jpg" alt="Analgesicos">
-                    <h3>Analgesicos</h3>
-                </a>
-            </div>
-            <div class="category">
-                <a href="produtos.html?categoria=antibioticos">
-                    <img src="images/antibioticos.jpg" alt="Antibioticos">
-                    <h3>Antibioticos</h3>
-                </a>
-            </div>
-            <div class="category">
-                <a href="produtos.html?categoria=antialergicos">
-                    <img src="images/antialergicos.avif" alt="Antialergicos">
-                    <h3>Antialergicos</h3>
-                </a>
-            </div>
+<!-- Seção de Categorias -->
+<section class="categories">
+    <h2>Categorias de Produtos</h2>
+    <div class="category-list">
+        <div class="category">
+            <a href="produtos.html?categoria=analgesicos">
+                <img src="images/analgesicos.jpg" alt="Analgesicos">
+                <h3>Analgesicos</h3>
+            </a>
         </div>
-    </section>
-
-    <div class="carousel">
-        <div class="slides">
-            <!-- Slide 1 -->
-            <div class="slide">
-                <!-- Produto 1 -->
-                <div class="product-card">
-                    <span class="discount-badge">20% OFF</span>
-                    <img src="images/produto1.jpg" alt="Produto 1">
-                    <div class="product-info">
-                        <h3 class="product-title">Produto 1</h3>
-                        <p class="product-price">R$ 29,90</p>
-                    </div>
-                </div>
-                <!-- Produto 2 -->
-                <div class="product-card">
-                    <span class="discount-badge">15% OFF</span>
-                    <img src="images/produto2.jpg" alt="Produto 2">
-                    <div class="product-info">
-                        <h3 class="product-title">Produto 2</h3>
-                        <p class="product-price">R$ 39,90</p>
-                    </div>
-                </div>
-                <!-- Produto 3 -->
-                <div class="product-card">
-                    <span class="discount-badge">10% OFF</span>
-                    <img src="images/produto3.jpg" alt="Produto 3">
-                    <div class="product-info">
-                        <h3 class="product-title">Produto 3</h3>
-                        <p class="product-price">R$ 49,90</p>
-                    </div>
-                </div>
-                <!-- Produto 4 -->
-                <div class="product-card">
-                    <span class="discount-badge">25% OFF</span>
-                    <img src="images/produto4.jpg.crdownload" alt="Produto 4">
-                    <div class="product-info">
-                        <h3 class="product-title">Produto 4</h3>
-                        <p class="product-price">R$ 19,90</p>
-                    </div>
-                </div>
-                <!-- Produto 5 -->
-                <div class="product-card">
-                    <span class="discount-badge">35% OFF</span>
-                    <img src="images/produto5.jfif" alt="Produto 5">
-                    <div class="product-info">
-                        <h3 class="product-title">Produto 5</h3>
-                        <p class="product-price">R$ 79,90</p>
-                    </div>
-                </div>
-            </div>
+        <div class="category">
+            <a href="produtos.html?categoria=antibioticos">
+                <img src="images/antibioticos.jpg" alt="Antibioticos">
+                <h3>Antibioticos</h3>
+            </a>
         </div>
-        <button class="prev">❮</button>
-        <button class="next">❯</button>
+        <div class="category">
+            <a href="produtos.html?categoria=antialergicos">
+                <img src="images/antialergicos.avif" alt="Antialergicos">
+                <h3>Antialergicos</h3>
+            </a>
+        </div>
     </div>
+</section>
 
-    <section class="newsletter-consent">
-        <h2>Receba Ofertas e Novidades</h2>
-        <form action="submit_consent.php" method="post">
-            <label for="promotional_emails">
-                <input type="checkbox" id="promotional_emails" name="promotional_emails" value="yes">
-                Eu gostaria de receber e-mails promocionais com ofertas e novidades.
-            </label>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>   
-    
-    <!-- Rodapé -->
+<!-- Seção de Indicações de Farmácias -->
+<section class="pharmacy-recommendations">
+    <h2>Farmácias Recomendadas em Belo Horizonte</h2>
+    <div class="pharmacy-list">
+        <div class="pharmacy">
+            <a href="https://www.araujo.com.br/" target="_blank">
+                <img src="images/araujo.png" alt="Drogaria Araujo">
+                <h3>Drogaria Araujo</h3>
+            </a>
+        </div>
+        <div class="pharmacy">
+            <a href="https://www.drogariaspacheco.com.br/" target="_blank">
+                <img src="images/pacheco.jpg" alt="Drogarias Pacheco">
+                <h3>Drogarias Pacheco</h3>
+            </a>
+        </div>
+        <div class="pharmacy">
+            <a href="https://www.drogaraia.com.br/" target="_blank">
+                <img src="images/drogaraia.jpg" alt="Drogaria Droga Raia">
+                <h3>Droga Raia</h3>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Seção de Destaques (Carrossel) -->
+<div class="carousel">
+    <div class="slides">
+        <!-- Slide 1 -->
+        <div class="slide">
+            <!-- Produto 1 -->
+            <div class="product-card">
+                <span class="discount-badge">20% OFF</span>
+                <img src="images/produto1.jpg" alt="Produto 1">
+                <div class="product-info">
+                    <h3 class="product-title">Produto 1</h3>
+                    <p class="product-price">R$ 29,90</p>
+                </div>
+            </div>
+            <!-- Produto 2 -->
+            <div class="product-card">
+                <span class="discount-badge">15% OFF</span>
+                <img src="images/produto2.jpg" alt="Produto 2">
+                <div class="product-info">
+                    <h3 class="product-title">Produto 2</h3>
+                    <p class="product-price">R$ 39,90</p>
+                </div>
+            </div>
+            <!-- Produto 3 -->
+            <div class="product-card">
+                <span class="discount-badge">10% OFF</span>
+                <img src="images/produto3.jpg" alt="Produto 3">
+                <div class="product-info">
+                    <h3 class="product-title">Produto 3</h3>
+                    <p class="product-price">R$ 49,90</p>
+                </div>
+            </div>
+            <!-- Produto 4 -->
+            <div class="product-card">
+                <span class="discount-badge">25% OFF</span>
+                <img src="images/produto4.jpg.crdownload" alt="Produto 4">
+                <div class="product-info">
+                    <h3 class="product-title">Produto 4</h3>
+                    <p class="product-price">R$ 19,90</p>
+                </div>
+            </div>
+            <!-- Produto 5 -->
+            <div class="product-card">
+                <span class="discount-badge">35% OFF</span>
+                <img src="images/produto5.jfif" alt="Produto 5">
+                <div class="product-info">
+                    <h3 class="product-title">Produto 5</h3>
+                    <p class="product-price">R$ 79,90</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+</div>
+
+<section class="newsletter-consent">
+    <h2>Receba Ofertas e Novidades</h2>
+    <form action="submit_consent.php" method="post">
+        <label for="promotional_emails">
+            <input type="checkbox" id="promotional_emails" name="promotional_emails" value="yes">
+            Eu gostaria de receber e-mails promocionais com ofertas e novidades.
+        </label>
+        <button type="submit">Enviar</button>
+    </form>
+</section>   
+
+<!-- Rodapé -->
 <footer>
     <p>&copy; 2024 Entrega de Remédios. Todos os direitos reservados.</p>
     <a href="mapa.html" class="map-button-footer">Ver Mapa</a>
 </footer>
 
-    <script src="js/scripts.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

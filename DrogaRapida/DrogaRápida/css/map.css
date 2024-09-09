@@ -1,6 +1,16 @@
-/* Estilo geral do corpo */
+html,
 body {
-    font-family: 'Arial', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.place-picker-container {
+  padding: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -9,35 +19,122 @@ body {
 header {
     background-color: #007bff;
     color: white;
-    padding: 10px 20px;
+    padding: 5px 15px; /* Reduz o padding para diminuir o tamanho do cabeçalho */
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+/* Estilo para o contêiner do cabeçalho */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaça uniformemente os itens */
+    width: 100%;
+    max-width: 1200px; /* Define a largura máxima do cabeçalho */
+    margin-left: 750px; /* Move o cabeçalho mais para a direita */
+    margin-right: 0; /* Garante que não haja margem à direita */
+}
+
+/* Estilo do logo */
+.logo {
+    position: absolute; /* Posiciona o logo no canto superior esquerdo */
+    left: 20px; /* Margem da esquerda */
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 125px; /* Reduz a altura da logo para diminuir o cabeçalho */
+    width: auto;
+}
+
+/* Estilo para a barra de navegação */
 nav {
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 nav a {
-    color: white;
     text-decoration: none;
-    margin: 0 15px;
+    color: white;
     font-weight: bold;
+    padding: 5px 8px; /* Reduz o padding dos links para economizar espaço */
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #ffcc00;
 }
 
-/* Estilo para o rodapé */
-footer {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-    bottom: 0;
+/* Ações do cabeçalho no canto direito */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduz o espaçamento entre os itens */
+    margin-left: auto;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: white;
+    width: 250px; /* Reduz a largura da barra de pesquisa */
+    margin-right: 15px;
+}
+
+.search-form input {
+    border: none;
+    padding: 5px; /* Reduz o padding do input para economizar espaço */
     width: 100%;
+    outline: none;
+    font-size: 14px; /* Diminui o tamanho da fonte */
+}
+
+.cart-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 5px;
+    }
+
+    .search-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .search-form input {
+        font-size: 12px;
+    }
+
+    .logo img {
+        height: 60px; /* Ajusta a altura da logo em dispositivos móveis */
+    }
 }

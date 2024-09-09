@@ -3,38 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmácias Próximas</title>
-    <link rel="stylesheet" href="css/map.css">
-    <style>
-        /* Estilo para o mapa */
-        #map {
-            height: 100vh; /* Ocupa toda a altura da tela */
-            width: 100%; /* Ocupa toda a largura da tela */
-        }
-    </style>
+    <title>Entrega de Remédios - Mapa</title>
+    <link rel="stylesheet" href="css/map.css"/>
+    <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.6"></script>
 </head>
 <body>
     <!-- Cabeçalho -->
     <header>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="produtos.html">Produtos</a>
-            <a href="contato.html">Contato</a>
-            <a href="mapa.html">Mapa</a>
-        </nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo" />
+            </a>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="contato.html">Contato</a>
+                <a href="registro.html">Registrar</a>
+                <a href="login.html">Login</a>
+            </nav>
+            <div class="header-actions">
+                <form action="search.php" method="get" class="search-form">
+                    <input type="text" name="query" placeholder="Pesquisar...">
+                </form>
+                <a href="carrinho.html" class="cart-icon">
+                    <img src="images/cart-icon.png" alt="Carrinho">
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
     </header>
 
     <!-- Mapa -->
-    <div id="map"></div>
+    <gmpx-api-loader key="AIzaSyDtDzbMwvBcxsTZXTdLKUeSGTJfPLBscl4" solution-channel="GMP_GE_mapsandplacesautocomplete_v1">
+    </gmpx-api-loader>
+    <gmp-map center="40.749933,-73.98633" zoom="13" map-id="DEMO_MAP_ID">
+        <div slot="control-block-start-inline-start" class="place-picker-container">
+            <gmpx-place-picker placeholder="Digite um endereço"></gmpx-place-picker>
+        </div>
+        <gmp-advanced-marker></gmp-advanced-marker>
+    </gmp-map>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 Entrega de Remédios. Todos os direitos reservados.</p>
-    </footer>
-
-    <!-- Inclua o script do Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-    <!-- Script para inicializar o mapa -->
+    <!-- Scripts -->
     <script src="js/map.js"></script>
 </body>
 </html>

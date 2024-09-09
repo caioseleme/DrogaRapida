@@ -24,7 +24,7 @@ header {
     justify-content: space-between; /* Espaça uniformemente os itens */
     width: 100%;
     max-width: 1200px; /* Define a largura máxima do cabeçalho */
-    margin-left: auto; /* Move o cabeçalho mais para a direita */
+    margin-left: 700px; /* Move o cabeçalho mais para a direita */
     margin-right: 0; /* Garante que não haja margem à direita */
 }
 
@@ -130,6 +130,60 @@ nav a:hover {
     text-align: center;
     padding: 50px 0;
 }
+
+/* Estilo para a seção de indicações de farmácias */
+.pharmacy-recommendations {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.pharmacy-recommendations h2 {
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #333;
+}
+
+.pharmacy-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pharmacy {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+    background-color: #fff;
+}
+
+.pharmacy:hover {
+    transform: scale(1.05);
+}
+
+.pharmacy img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.pharmacy h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+}
+
+.pharmacy a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /* Estilo para o carrossel */
 .carousel {
