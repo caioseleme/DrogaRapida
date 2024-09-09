@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega de Remédios - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- Cabeçalho -->
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Logo" />
+        </a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
+            <a href="mapa.html" class="map-button">Mapa</a>
+            <a href="registro.html">Registrar</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <div class="header-actions">
+            <form action="search.php" method="get" class="search-form">
+                <input type="text" name="query" placeholder="Pesquisar...">
+            </form>
+            <a href="carrinho.html" class="cart-icon">
+                <img src="images/cart-icon.png" alt="Carrinho">
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+
+    <!-- Seção Principal -->
+    <section class="hero">
+        <h1>Bem-vindo à Entrega de Remédios</h1>
+        <p>Entregamos seus medicamentos com rapidez e segurança.</p>
+    </section>
+
+    <!-- Seção de Categorias -->
+    <section class="categories">
+        <h2>Categorias de Produtos</h2>
+        <div class="category-list">
+            <div class="category">
+                <a href="produtos.html?categoria=analgesicos">
+                    <img src="images/analgesicos.jpg" alt="Analgesicos">
+                    <h3>Analgesicos</h3>
+                </a>
+            </div>
+            <div class="category">
+                <a href="produtos.html?categoria=antibioticos">
+                    <img src="images/antibioticos.jpg" alt="Antibioticos">
+                    <h3>Antibioticos</h3>
+                </a>
+            </div>
+            <div class="category">
+                <a href="produtos.html?categoria=antialergicos">
+                    <img src="images/antialergicos.avif" alt="Antialergicos">
+                    <h3>Antialergicos</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="carousel">
+        <div class="slides">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <!-- Produto 1 -->
+                <div class="product-card">
+                    <span class="discount-badge">20% OFF</span>
+                    <img src="images/produto1.jpg" alt="Produto 1">
+                    <div class="product-info">
+                        <h3 class="product-title">Produto 1</h3>
+                        <p class="product-price">R$ 29,90</p>
+                    </div>
+                </div>
+                <!-- Produto 2 -->
+                <div class="product-card">
+                    <span class="discount-badge">15% OFF</span>
+                    <img src="images/produto2.jpg" alt="Produto 2">
+                    <div class="product-info">
+                        <h3 class="product-title">Produto 2</h3>
+                        <p class="product-price">R$ 39,90</p>
+                    </div>
+                </div>
+                <!-- Produto 3 -->
+                <div class="product-card">
+                    <span class="discount-badge">10% OFF</span>
+                    <img src="images/produto3.jpg" alt="Produto 3">
+                    <div class="product-info">
+                        <h3 class="product-title">Produto 3</h3>
+                        <p class="product-price">R$ 49,90</p>
+                    </div>
+                </div>
+                <!-- Produto 4 -->
+                <div class="product-card">
+                    <span class="discount-badge">25% OFF</span>
+                    <img src="images/produto4.jpg.crdownload" alt="Produto 4">
+                    <div class="product-info">
+                        <h3 class="product-title">Produto 4</h3>
+                        <p class="product-price">R$ 19,90</p>
+                    </div>
+                </div>
+                <!-- Produto 5 -->
+                <div class="product-card">
+                    <span class="discount-badge">35% OFF</span>
+                    <img src="images/produto5.jfif" alt="Produto 5">
+                    <div class="product-info">
+                        <h3 class="product-title">Produto 5</h3>
+                        <p class="product-price">R$ 79,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    </div>
+
+    <section class="newsletter-consent">
+        <h2>Receba Ofertas e Novidades</h2>
+        <form action="submit_consent.php" method="post">
+            <label for="promotional_emails">
+                <input type="checkbox" id="promotional_emails" name="promotional_emails" value="yes">
+                Eu gostaria de receber e-mails promocionais com ofertas e novidades.
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>   
+    
+    <!-- Rodapé -->
+<footer>
+    <p>&copy; 2024 Entrega de Remédios. Todos os direitos reservados.</p>
+    <a href="mapa.html" class="map-button-footer">Ver Mapa</a>
+</footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

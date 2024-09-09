@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácias Próximas</title>
+    <link rel="stylesheet" href="css/map.css">
+    <style>
+        /* Estilo para o mapa */
+        #map {
+            height: 100vh; /* Ocupa toda a altura da tela */
+            width: 100%; /* Ocupa toda a largura da tela */
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
+            <a href="mapa.html">Mapa</a>
+        </nav>
+    </header>
+
+    <!-- Mapa -->
+    <div id="map"></div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Entrega de Remédios. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Inclua o script do Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <!-- Script para inicializar o mapa -->
+    <script src="js/map.js"></script>
+</body>
+</html>
