@@ -1,0 +1,236 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.place-picker-container {
+  padding: 20px;
+  position: relative;
+  left: 275%;   
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+}
+
+/* Estilo para o contêiner do cabeçalho */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaça uniformemente os itens */
+    width: 100%;
+    max-width: 1200px; /* Define a largura máxima do cabeçalho */
+    margin-left: 750px; /* Move o cabeçalho mais para a direita */
+    margin-right: 0; /* Garante que não haja margem à direita */
+}
+
+/* Estilo para a barra de navegação */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white; /* Cor dos links */
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Cor de destaque ao passar o mouse */
+}
+
+/* Estilo do logo */
+.logo {
+    position: absolute; /* Posiciona o logo no canto superior esquerdo */
+    left: 20px; /* Margem da esquerda */
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 200px; /* Aumenta a altura do logo */
+    width: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para o botão de mapa */
+.index-button {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.index-button:hover {
+    background-color: #0056b3; /* Tom mais escuro ao passar o mouse */
+}
+
+.product-button {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.product-button:hover {
+    background-color: #0056b3; /* Tom mais escuro ao passar o mouse */
+}
+
+.contact-button {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #0056b3; /* Tom mais escuro ao passar o mouse */
+}
+
+.map-button {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.map-button:hover {
+    background-color: #0056b3; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Ações do cabeçalho no canto direito */
+.header-actions {
+    position: absolute;
+    right: 20px; /* Posiciona à direita */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Barra de pesquisa */
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 32px;
+    overflow: hidden;
+    background-color: white; /* Fundo branco para o campo de pesquisa */
+    width: 300px; /* Alonga a barra de pesquisa */
+}
+
+.search-form input {
+    border: none;
+    padding: 8px;
+    width: 100%; /* Ocupa todo o espaço disponível */
+    outline: none;
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+}
+
+/* Ícone do carrinho */
+.cart-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Ícone de usuário e lista suspensa */
+.user-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 110%; /* Abaixo do ícone do usuário */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 1000;
+    width: 150px;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: block;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f5f5f5;
+}
+
+/* Mostra a lista suspensa ao passar o mouse */
+.user-dropdown:hover .dropdown-menu {
+    display: block;
+}

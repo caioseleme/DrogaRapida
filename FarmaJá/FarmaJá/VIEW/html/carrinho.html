@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="../images/logo.png" alt="Logo" />
+            </a>
+            <nav>
+                <a href="../html/index.html" class="index-button">Início</a>
+                <a href="../html/produtos.html" class="product-button">Produtos</a>
+                <a href="../html/contato.html" class="contact-button">Contato</a>
+                <a href="../html/mapa.html" class="map-button">Mapa</a>
+            </nav>
+            <div class="header-actions">
+                <form action="../php/search.php" method="get" class="search-form">
+                    <input type="text" name="query" placeholder="Pesquisar...">
+                </form>
+                <div class="user-dropdown">
+                    <span class="material-symbols-outlined" alt="Usuário" class="user-icon">account_circle</span>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/registro.html">Registrar</a></li>
+                        <li><a href="../html/login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção do Carrinho -->
+    <main class="cart-container">
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                    <th>Total</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Os itens do carrinho serão inseridos dinamicamente aqui -->
+            </tbody>
+        </table>
+
+        <!-- Total Geral -->
+        <div class="cart-summary">
+            <p>Total do Carrinho: <span id="cart-total">R$ 0,00</span></p>
+            <button id="checkout-button">Finalizar Compra</button>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 FarmaJá. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../js/cart.js"></script>
+</body>
+</html>
